@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	<title>My Test Flask App</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Learning Flask</h1>
+		</div>
+	</header>
+
+	{% block content %}
+	{% endblock %}
+
+	</body>
+</html>
