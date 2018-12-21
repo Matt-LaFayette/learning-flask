@@ -1,3 +1,5 @@
+#!./venv/lib/env python2.7
+
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug import generate_password_hash, check_password_hash
 
