@@ -1,6 +1,11 @@
 from flask import Flask, render_template
+from modles import db
 
 app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/learningflask'
+db.init_app(app)
+
 
 @app.route("/")
 def index():
